@@ -5,8 +5,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import java.math.BigInteger
 
-class RecyclerViewNumberAdapter(var numberList:List<Int>):RecyclerView.Adapter<NumberViewHolder>(){
+class RecyclerViewNumberAdapter(var numberList:List<BigInteger>):RecyclerView.Adapter<NumberViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NumberViewHolder {
         var itemView=LayoutInflater.from(parent.context)
             .inflate(R.layout.numberlistitems,parent,false)
